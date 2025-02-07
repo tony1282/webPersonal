@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} projects {% endblock %}
+
+{% block header %}
+
+{% load static %}
+<header class="masthead" style="background-image: url({% static 'img/home-bg.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>{{ name }}</h1>
+            <span class="subheading">{{ career }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+{% endblock %}

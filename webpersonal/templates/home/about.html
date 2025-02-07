@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %} projects {% endblock %}
+
+{% block header %}
+
+    {% load static %}
+    <!-- Cabecera -->
+    <header class="masthead" style="background-image: url({% static 'img/about-bg.jpg' %})">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <div class="site-heading">
+                <h1>Acerca de</h1>
+                <span class="subheading">Biografía</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">   
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'img/avatar.jpg'%}" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">{{ name }}</h2>   
+      <p> {{ description }}</p>
+      </div>
+    </div>  
+  </div>
+{% endblock content%}
